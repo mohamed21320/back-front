@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/main.css">
+</head>
+<body class=" mb-5 ">
+
+<div class="container">
+    <div class="content">
+        <h1>M00elsayed</h1>
+        <h1>M00elsayed</h1>
+    </div>
+</div>
+<div class=" w-75 mx-auto bg-info text p-4 rounded-4">
+    <div class="my-2">
+        <label for="inputName">product Name</label>
+        <input type="text" id="inputName" class="form-control"  placeholder="Enter Name ...">
+    </div>
+   <div class="d-flex justify-content-between ">
+    <div class="w-75 me-4">
+        <label for="inputPrice">product Price</label>
+        <input type="number" id="inputPrice" class="form-control"placeholder="Enter Price ...">
+    </div>
+
+    <div class="w-75 ms-4 ">
+        <label for="inputCount">Count</label>
+        <input type="number" id="inputCount" class="form-control" placeholder="Enter Count ..." >
+    </div>
+   </div>
+
+    <div class="mt-2">
+        <label for="category">Category</label>
+        <input type="text" id="category" class="form-control" placeholder="Enter Category ..." >
+    </div>
+
+    <div class="my-2">
+        <label for="discription">discription</label>
+        <textarea class="form-control" name="discription" id="discription" placeholder="ENTER discription ..."></textarea>  
+    </div>
+    
+<div class="d-flex justify-content-center">
+    <button onclick="addProduct()"  id="addBtn" class="btn btn-primary mt-3 btn-lg px-4">Add Item</button>
+    <button onclick="updateProduct()" id="updateBtn" class=" d-none">Update Item</button>
+</div>
+
+<div class="d-flex justify-content-center my-3">
+    <input oninput="search()" type="search" id="inputSearch" class="form-control w-50" placeholder="Search BY Name ...">
+</div>
+
+<table class="table my-3 text-center ">
+<thead>
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Count</th>
+        <th>Category</th>
+        <th>Discription</th>
+        <th>Button</th>
+    </tr>
+</thead>
+<tbody id="bodyData">
+   
+</tbody>
+</table>
+</div>
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
